@@ -1,0 +1,17 @@
+#current project futb. 
+#This assumes a rails project here.
+export WORKING_DIR=~/ruby/futb
+cd $WORKING_DIR
+
+tmux start-server
+# Create new session
+tmux new-session -s 'futb' -n 'vim' -d 'bundle exec vim'
+
+#create new tmux window for the server 
+tmux -2 new-window -n 'server' 'bundle exec rails server'
+
+#Create new window for console
+tmux -2 new-window -n 'console' 'bundle exec rails console'
+ 
+tmux -2 select-window -t futb:0 
+tmux -2 attach-session -d -t futb 
