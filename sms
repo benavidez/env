@@ -1,0 +1,17 @@
+#current project sms. 
+#This assumes a rails project here.
+export WORKING_DIR=~/ruby/sms-0.5.0
+cd $WORKING_DIR
+
+tmux start-server
+# Create new session
+tmux new-session -s 'sms' -n 'vim' -d 'bundle exec vim'
+
+#create new tmux window for the server 
+tmux -2 new-window -n 'server' 'bundle exec rails server'
+
+#Create new window for console
+tmux -2 new-window -n 'console' 'bundle exec rails console'
+ 
+tmux -2 select-window -t sms:0 
+tmux -2 attach-session -d -t sms 

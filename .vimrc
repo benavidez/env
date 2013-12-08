@@ -5,7 +5,7 @@ autocmd! bufwritepost .vimrc source %
 autocmd FileType ruby compiler ruby
 compiler ruby         " Enable compiler support for ruby
 
-
+autocmd VimEnter * xmap s S
 
 
 " Mouse and backspace
@@ -50,7 +50,10 @@ filetype plugin on    " Enable filetype-specific plugins
 
  " noremap <Leader>r :! ruby %<CR>  "Run current ruby script 
  nmap <Leader>r :!ruby %<CR>
+ nmap <Leader>nf :NERDTree<CR>
 
+ nmap <Leader>v :vs<CR>
+ nmap <Leader>w :wincmd w<CR>
  " noremap <Leader>t :! ruby %<CR>  "Run current ruby spec script 
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
