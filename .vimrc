@@ -135,7 +135,6 @@ filetype plugin on    " Enable filetype-specific plugins
  set nowritebackup
  set noswapfile
 
-
 " Setup Pathogen to manage your plugins
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
