@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/eduardo/ruby/blog/app/views/home'
+let g:netrw_dirhist_2='/home/eduardo/ruby/blog/config'
+let g:netrw_dirhist_3='/home/eduardo/ruby/blog/public'
+let g:netrw_dirhist_4='/home/eduardo/ruby/fut/config'
+let g:netrw_dirhist_5='/home/eduardo/.vim'
